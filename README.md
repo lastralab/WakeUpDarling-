@@ -6,16 +6,27 @@ Arduino based Coffee Machine Alarm
 Parts I used:
 
 Arduino Uno
+
 Pushbuttons (2)
+
 LCD 16x2
+
 Wires
+
 Resistors (220Ω, 1kΩ)
+
 Potentiometer
+
 Coffee Machine
+
 Diode (SOD83-12)
+
 Transistor NPN (SOT37)
+
 Relay SPDT 5V (coil) 120VAC
+
 Soldering iron
+
 Grounding Converters (2) like the one in the picture
 
 ![31caoriq80l _sy300_](https://cloud.githubusercontent.com/assets/22894897/20027208/738834a8-a2d3-11e6-9fa4-d4ee56378a8d.jpg)
