@@ -1,6 +1,8 @@
 # WakeUpDarling-
 Arduino based Coffee Machine Alarm
 
+Lab View:
+
 <img width="682" alt="screen shot 2016-11-04 at 8 53 22 pm" src="https://cloud.githubusercontent.com/assets/22894897/20027137/16e187ba-a2d1-11e6-8a17-a24fe9e2b294.png">
 
 Parts I used:
@@ -31,7 +33,9 @@ Grounding Converters (2) like the one in the picture
 
 ![31caoriq80l _sy300_](https://cloud.githubusercontent.com/assets/22894897/20027208/738834a8-a2d3-11e6-9fa4-d4ee56378a8d.jpg)
 
-Once I had everything, I wired the coffee machine as it was the light bulb of the diagram:
+Once I had everything, I wired the coffee machine as it was the light bulb.  
+
+Schematics View:
 
 <img width="668" alt="screen shot 2016-11-04 at 8 53 48 pm" src="https://cloud.githubusercontent.com/assets/22894897/20027138/1c30be02-a2d1-11e6-94f4-ebfa36b3c27b.png">
 
