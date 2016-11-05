@@ -38,7 +38,8 @@ Once I had everything, I wired the coffee machine as it was the light bulb.
 
 Schematics View:
 
-<img width="668" alt="screen shot 2016-11-04 at 8 53 48 pm" src="https://cloud.githubusercontent.com/assets/22894897/20027138/1c30be02-a2d1-11e6-94f4-ebfa36b3c27b.png">
+<img width="698" alt="screen shot 2016-11-05 at 11 03 41 am" src="https://cloud.githubusercontent.com/assets/22894897/20032049/b07670fe-a347-11e6-9bc1-e783b47db902.png">
+
 
 This is the coffee machine I used to replace the light bulb in the simulator:
 
