@@ -3,8 +3,7 @@ Arduino based Coffee Machine Alarm
 
 Lab View:
 
-<img width="693" alt="screen shot 2016-11-04 at 10 41 09 pm" src="https://cloud.githubusercontent.com/assets/22894897/20027682/e6beb9b8-a2df-11e6-9b3a-fbc89f2df1cc.png">
-
+<img width="561" alt="screen shot 2016-11-06 at 2 05 28 pm" src="https://cloud.githubusercontent.com/assets/22894897/20041687/2ee5e7e8-a42a-11e6-8e8e-dbd09ba55b46.png">
 
 Parts I used:
 
