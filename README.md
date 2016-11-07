@@ -21,9 +21,9 @@ Potentiometer
 
 Coffee Machine
 
-Diode (SOD83-12)
+Diode (1N4001)
 
-Transistor NPN (SOT37)
+Transistor NPN (2222A)
 
 Relay SPDT 5V (coil) 120VAC
 
