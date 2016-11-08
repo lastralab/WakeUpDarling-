@@ -54,9 +54,9 @@ Code:
 <font color="#434f54">// </font>
 <font color="#434f54">// WakeUpDarling!</font>
 <font color="#434f54">// </font>
-<font color="#434f54">// Made by Tania Melino</font>
+<font color="#434f54">// Made by Tania Melina</font>
 <font color="#434f54">// License: CERN Open Hardware License</font>
-<font color="#434f54">// Downloaded from: </font><u><font color="#434f54">https://circuits.io/circuits/3126865-wakeupdarling</font></u><font color="#434f54"></font>
+<font color="#434f54">// Downloaded from: </font><u><font color="#434f54">https://circuits.io/circuits/3145505-wakeupdarling</font></u><font color="#434f54"></font>
 
 
 <font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">LiquidCrystal</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
@@ -85,28 +85,23 @@ Code:
  &nbsp;
  &nbsp;<font color="#000000">starttime</font> <font color="#434f54">=</font> <font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font><font color="#434f54">/</font><font color="#000000">1000</font><font color="#000000">;</font>
 <font color="#000000">}</font>
-
 <font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font>
 <font color="#000000">{</font>
  &nbsp;
  &nbsp;<font color="#5e6d03">if</font><font color="#000000">(</font><font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">10</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">LOW</font><font color="#000000">)</font>
+ &nbsp;
  &nbsp;<font color="#000000">{</font>
  &nbsp;&nbsp;&nbsp;
  &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">5</font><font color="#434f54">,</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font>
  &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"Set Time"</font><font color="#000000">)</font><font color="#000000">;</font>
  &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">6</font><font color="#434f54">,</font><font color="#000000">0</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">hours</font><font color="#434f54">++</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
  &nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">11</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">LOW</font><font color="#000000">)</font>
+ &nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">11</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">LOW</font><font color="#000000">)</font>
  &nbsp;&nbsp;&nbsp;<font color="#000000">{</font>
  &nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">mins</font><font color="#434f54">++</font><font color="#000000">;</font>
  &nbsp;&nbsp;&nbsp;<font color="#000000">}</font> 
- &nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">10</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">LOW</font><font color="#000000">)</font>
- &nbsp;&nbsp;&nbsp;<font color="#000000">{</font>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">hours</font><font color="#434f54">++</font><font color="#000000">;</font>
- &nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
- &nbsp;&nbsp;&nbsp;
-
- &nbsp;<font color="#000000">}</font>
  &nbsp;
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">activetime</font> <font color="#434f54">=</font> <font color="#000000">(</font><font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">/</font> <font color="#000000">1000</font><font color="#000000">)</font> <font color="#434f54">-</font> <font color="#000000">starttime</font><font color="#000000">;</font>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font><font color="#000000">(</font><font color="#000000">prevoustime</font> <font color="#434f54">&lt;</font> <font color="#000000">(</font><font color="#000000">activetime</font> <font color="#434f54">-</font> <font color="#000000">59</font><font color="#000000">)</font><font color="#000000">)</font>
