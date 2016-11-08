@@ -3,7 +3,7 @@ Arduino based Coffee Machine Alarm
 
 Video:
 
-![simwud](https://cloud.githubusercontent.com/assets/22894897/20111130/5a33304c-a5a4-11e6-9176-877e1894b1bd.gif)
+![simwud-2](https://cloud.githubusercontent.com/assets/22894897/20111199/a6c945e0-a5a4-11e6-84fa-bf9d606cb45e.gif)
 
 Lab View:
 
@@ -162,5 +162,9 @@ Code:
 <font color="#000000">}</font>
 
 </pre>
+
+Long Video:
+
+![simwudlong](https://cloud.githubusercontent.com/assets/22894897/20111111/4b3acc94-a5a4-11e6-9b0f-a2b7fd9c4a49.gif)
 
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
