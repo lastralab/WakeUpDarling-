@@ -159,4 +159,3 @@ Code:
 
 </pre>
 
-I'll be uploading pictures (of the process) and stuff (I am still working on it).
