@@ -1,6 +1,10 @@
 # WakeUpDarling-
 Arduino based Coffee Machine Alarm
 
+Video:
+
+![simwud](https://cloud.githubusercontent.com/assets/22894897/20111130/5a33304c-a5a4-11e6-9176-877e1894b1bd.gif)
+
 Lab View:
 
 <img width="792" alt="screen shot 2016-11-06 at 2 09 11 pm" src="https://cloud.githubusercontent.com/assets/22894897/20041727/a91ebbfc-a42a-11e6-9671-c52053b632ea.png">
