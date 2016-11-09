@@ -46,7 +46,7 @@ Schematics View:
 
 This is the coffee machine I used to replace the light bulb in the simulator:
 
-![new-home-coffee-maker-mr-coffee-tf4gtf](https://cloud.githubusercontent.com/assets/22894897/20026155/64daf8b2-a2bc-11e6-8880-38ca2cbb42f0.jpg)
+![whatsapp image 2016-11-08 at 15 05 07](https://cloud.githubusercontent.com/assets/22894897/20141226/a0661860-a64c-11e6-8023-d0a8f22379e6.jpeg)
 
 Code:
 
