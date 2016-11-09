@@ -163,6 +163,11 @@ Code:
 
 </pre>
 
+This is how it looks finished.
+
+![whatsapp image 2016-11-08 at 14 40 33](https://cloud.githubusercontent.com/assets/22894897/20141360/412e058c-a64d-11e6-8785-892cfd460142.jpeg)
+
+
 Long Video:
 
 ![simwudlong](https://cloud.githubusercontent.com/assets/22894897/20111111/4b3acc94-a5a4-11e6-9b0f-a2b7fd9c4a49.gif)
