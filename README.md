@@ -45,6 +45,7 @@ Schematics View:
 
 Code:
 
+[code]
 //  _ ___ _______     ___ ___ ___  ___ _   _ ___ _____ ___ 
 // / |_  )__ /   \   / __|_ _| _ \/ __| | | |_ _|_   _/ __| 
 // | |/ / |_ \ |) | | (__ | ||   / (__| |_| || |  | | \__ \ 
@@ -52,10 +53,9 @@ Code:
 // 
 // WakeUpDarling!
 // 
-// Made by Tania Melina
+// Made by Tania Melino
 // License: CERN Open Hardware License
-// Downloaded from: https://circuits.io/circuits/3145505-wakeupdarling
-
+// Downloaded from: https://circuits.io/circuits/3126865-wakeupdarling
 
 #include <LiquidCrystal.h>
 
@@ -73,7 +73,7 @@ void setup()
   lcd.clear();
   
   Serial.begin(9600);
-  
+
   pinMode(11, INPUT);
   digitalWrite(11, HIGH);
   pinMode(10, INPUT);
@@ -83,44 +83,41 @@ void setup()
   
   starttime = millis()/1000;
 }
+
 void loop()
 {
   
-  if(digitalRead(10) == LOW)
-  
+  if (digitalRead(10) == LOW)
   {
     
     lcd.setCursor(0,1);
-    lcd.print("Wake up Darling!");
-    lcd.setCursor(0,0);
+    lcd.print("What time is it?");
+    lcd.setCursor(1,0);
     hours++;
-    delay(250);
   }
+    else if (digitalRead(11) == LOW)
     
-  else if (digitalRead(11) == LOW)
-    {
-     mins++;
-     delay(250);
-    } 
+     { 
+      mins++;
+     }
+    
   
       activetime = (millis() / 1000) - starttime;
       if(prevoustime < (activetime - 59))
       {
        mins++;
        prevoustime = activetime;
-      } 
-      
+      }  
       if(mins > 59)
      {
       hours++;
       mins = 0;
      } 
-     
+    
      if(hours > 23)
      {
       hours = 0; 
      }
-  
   
   lcd.setCursor(6,0);
   
@@ -150,12 +147,13 @@ if (hours == 6 && mins == 0)
 { 
   digitalWrite (9, HIGH);  
     } 
-if (hours == 9 && mins == 0)
+if (hours == 10 && mins == 0)
 {
   digitalWrite (9, LOW);
 }
   
 }
+[/code]
 
 The last part of the code is for you to select the alarm time.
 
