@@ -23,7 +23,7 @@ Resistors (220Ω, 1kΩ)
 
 Potentiometer
 
-Coffee Machine
+Coffee Machine (light bulb in the simulator)
 
 Diode (1N4001)
 
@@ -42,11 +42,6 @@ Once I had everything, I wired the coffee machine as it was the light bulb.
 Schematics View:
 
 <img width="863" alt="screen shot 2016-11-08 at 8 56 51 am" src="https://cloud.githubusercontent.com/assets/22894897/20106175/78fda4d4-a591-11e6-80ca-00de4065ab49.png">
-
-
-This is the coffee machine I used to replace the light bulb in the simulator:
-
-![whatsapp image 2016-11-08 at 15 05 07](https://cloud.githubusercontent.com/assets/22894897/20141226/a0661860-a64c-11e6-8023-d0a8f22379e6.jpeg)
 
 Code:
 
@@ -163,13 +158,15 @@ Code:
 
 </pre>
 
-This is how it looks finished.
-
-![whatsapp image 2016-11-08 at 14 40 33](https://cloud.githubusercontent.com/assets/22894897/20141360/412e058c-a64d-11e6-8785-892cfd460142.jpeg)
-
-
 Long Video:
 
 ![simwudlong](https://cloud.githubusercontent.com/assets/22894897/20111111/4b3acc94-a5a4-11e6-9b0f-a2b7fd9c4a49.gif)
 
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
+
+This is how it looks finished:
+
+![whatsapp image 2016-11-08 at 15 05 07](https://cloud.githubusercontent.com/assets/22894897/20141226/a0661860-a64c-11e6-8023-d0a8f22379e6.jpeg)
+
+![whatsapp image 2016-11-08 at 14 40 33](https://cloud.githubusercontent.com/assets/22894897/20141360/412e058c-a64d-11e6-8785-892cfd460142.jpeg)
+
