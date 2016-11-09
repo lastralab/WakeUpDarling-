@@ -158,6 +158,8 @@ Code:
 
 </pre>
 
+The last part of the code is for you to select the alarm time.
+
 Long Video:
 
 ![simwudlong](https://cloud.githubusercontent.com/assets/22894897/20111111/4b3acc94-a5a4-11e6-9b0f-a2b7fd9c4a49.gif)
