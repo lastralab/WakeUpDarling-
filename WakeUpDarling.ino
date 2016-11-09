@@ -5,9 +5,9 @@
 // 
 // WakeUpDarling!
 // 
-// Made by Tania Melino
+// Made by Tania Melina
 // License: CERN Open Hardware License
-// Downloaded from: https://circuits.io/circuits/3126865-wakeupdarling
+// Downloaded from: https://circuits.io/circuits/3145505-wakeupdarling
 
 
 #include <LiquidCrystal.h>
@@ -36,28 +36,25 @@ void setup()
   
   starttime = millis()/1000;
 }
-
 void loop()
 {
   
   if(digitalRead(10) == LOW)
+  
   {
     
-    lcd.setCursor(5,1);
-    lcd.print("Set Time");
-    lcd.setCursor(6,0);
+    lcd.setCursor(0,1);
+    lcd.print("Wake up Darling!");
+    lcd.setCursor(0,0);
+    hours++;
+    delay(250);
+  }
     
-     if (digitalRead(11) == LOW)
+  else if (digitalRead(11) == LOW)
     {
      mins++;
+     delay(250);
     } 
-    else if (digitalRead(10) == LOW)
-    {
-      hours++;
-    }
-    
-
-  }
   
       activetime = (millis() / 1000) - starttime;
       if(prevoustime < (activetime - 59))
@@ -106,7 +103,7 @@ if (hours == 6 && mins == 0)
 { 
   digitalWrite (9, HIGH);  
     } 
-if (hours == 10 && mins == 0)
+if (hours == 9 && mins == 0)
 {
   digitalWrite (9, LOW);
 }
