@@ -45,123 +45,122 @@ Schematics View:
 
 Code:
 
-[code]
-//  _ ___ _______     ___ ___ ___  ___ _   _ ___ _____ ___ 
-// / |_  )__ /   \   / __|_ _| _ \/ __| | | |_ _|_   _/ __| 
-// | |/ / |_ \ |) | | (__ | ||   / (__| |_| || |  | | \__ \ 
-// |_/___|___/___/   \___|___|_|_\\___|\___/|___| |_| |___/ 
-// 
-// WakeUpDarling!
-// 
-// Made by Tania Melino
-// License: CERN Open Hardware License
-// Downloaded from: https://circuits.io/circuits/3126865-wakeupdarling
+<pre>
+<font color="#434f54">// &nbsp;_ ___ _______ &nbsp;&nbsp;&nbsp;&nbsp;___ ___ ___ &nbsp;___ _ &nbsp;&nbsp;_ ___ _____ ___ </font>
+<font color="#434f54">// / |_ &nbsp;)__ / &nbsp;&nbsp;\ &nbsp;&nbsp;/ __|_ _| _ \/ __| | | |_ _|_ &nbsp;&nbsp;_/ __| </font>
+<font color="#434f54">// | |/ / |_ \ |) | | (__ | || &nbsp;&nbsp;/ (__| |_| || | &nbsp;| | \__ \ </font>
+<font color="#434f54">// |_/___|___/___/ &nbsp;&nbsp;\___|___|_|_\\___|\___/|___| |_| |___/ </font>
+<font color="#434f54">// </font>
+<font color="#434f54">// WakeUpDarling!</font>
+<font color="#434f54">// </font>
+<font color="#434f54">// Made by Tania Melino</font>
+<font color="#434f54">// License: CERN Open Hardware License</font>
+<font color="#434f54">// Downloaded from: </font><u><font color="#434f54">https://circuits.io/circuits/3126865-wakeupdarling</font></u><font color="#434f54"></font>
 
-#include <LiquidCrystal.h>
+<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">LiquidCrystal</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
 
-LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
-int starttime;
-int activetime;
-int prevoustime = 0;
+<b><font color="#d35400">LiquidCrystal</font></b> <font color="#000000">lcd</font><font color="#000000">(</font><font color="#000000">7</font><font color="#434f54">,</font> <font color="#000000">6</font><font color="#434f54">,</font> <font color="#000000">5</font><font color="#434f54">,</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">3</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#00979c">int</font> <font color="#000000">starttime</font><font color="#000000">;</font>
+<font color="#00979c">int</font> <font color="#000000">activetime</font><font color="#000000">;</font>
+<font color="#00979c">int</font> <font color="#000000">prevoustime</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
 
-int hours = 0;
-int mins = 0;
+<font color="#00979c">int</font> <font color="#000000">hours</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
+<font color="#00979c">int</font> <font color="#000000">mins</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
 
-void setup()
-{
-  lcd.begin(16, 2);
-  lcd.clear();
-  
-  Serial.begin(9600);
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+ &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">16</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">9600</font><font color="#000000">)</font><font color="#000000">;</font>
 
-  pinMode(11, INPUT);
-  digitalWrite(11, HIGH);
-  pinMode(10, INPUT);
-  digitalWrite(10, HIGH); 
-  pinMode(9, OUTPUT);
-  digitalWrite(9, LOW);
-  
-  starttime = millis()/1000;
-}
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">11</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">11</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">10</font><font color="#434f54">,</font> <font color="#00979c">INPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">10</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font> 
+ &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;
+ &nbsp;<font color="#000000">starttime</font> <font color="#434f54">=</font> <font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font><font color="#434f54">/</font><font color="#000000">1000</font><font color="#000000">;</font>
+<font color="#000000">}</font>
 
-void loop()
-{
-  
-  if (digitalRead(10) == LOW)
-  {
-    
-    lcd.setCursor(0,1);
-    lcd.print("What time is it?");
-    lcd.setCursor(1,0);
-    hours++;
-  }
-    else if (digitalRead(11) == LOW)
-    
-     { 
-      mins++;
-     }
-    
-  
-      activetime = (millis() / 1000) - starttime;
-      if(prevoustime < (activetime - 59))
-      {
-       mins++;
-       prevoustime = activetime;
-      }  
-      if(mins > 59)
-     {
-      hours++;
-      mins = 0;
-     } 
-    
-     if(hours > 23)
-     {
-      hours = 0; 
-     }
-  
-  lcd.setCursor(6,0);
-  
-  if(hours < 10)
-  {
-    lcd.print("0");
-    lcd.print(hours);
-  }
-  else
-  {
-    lcd.print(hours);
-  }
-    
-    lcd.print(":");
-    
-  if (mins < 10)
-  {
-    lcd.print("0");
-      lcd.print(mins);
-  }
-  else
-  {
-      lcd.print(mins);
-  }
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+ &nbsp;
+ &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">10</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">LOW</font><font color="#000000">)</font>
+ &nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"What time is it?"</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">1</font><font color="#434f54">,</font><font color="#000000">0</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">hours</font><font color="#434f54">++</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
+ &nbsp;&nbsp;&nbsp;<font color="#5e6d03">else</font> <font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#d35400">digitalRead</font><font color="#000000">(</font><font color="#000000">11</font><font color="#000000">)</font> <font color="#434f54">==</font> <font color="#00979c">LOW</font><font color="#000000">)</font>
+ &nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">{</font> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">mins</font><font color="#434f54">++</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+ &nbsp;&nbsp;&nbsp;
+ &nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">activetime</font> <font color="#434f54">=</font> <font color="#000000">(</font><font color="#d35400">millis</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">/</font> <font color="#000000">1000</font><font color="#000000">)</font> <font color="#434f54">-</font> <font color="#000000">starttime</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font><font color="#000000">(</font><font color="#000000">prevoustime</font> <font color="#434f54">&lt;</font> <font color="#000000">(</font><font color="#000000">activetime</font> <font color="#434f54">-</font> <font color="#000000">59</font><font color="#000000">)</font><font color="#000000">)</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">mins</font><font color="#434f54">++</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">prevoustime</font> <font color="#434f54">=</font> <font color="#000000">activetime</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font> &nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font><font color="#000000">(</font><font color="#000000">mins</font> <font color="#434f54">&gt;</font> <font color="#000000">59</font><font color="#000000">)</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">hours</font><font color="#434f54">++</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">mins</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font> 
+ &nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font><font color="#000000">(</font><font color="#000000">hours</font> <font color="#434f54">&gt;</font> <font color="#000000">23</font><font color="#000000">)</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">hours</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> 
+ &nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+ &nbsp;
+ &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">6</font><font color="#434f54">,</font><font color="#000000">0</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;
+ &nbsp;<font color="#5e6d03">if</font><font color="#000000">(</font><font color="#000000">hours</font> <font color="#434f54">&lt;</font> <font color="#000000">10</font><font color="#000000">)</font>
+ &nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"0"</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">hours</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
+ &nbsp;<font color="#5e6d03">else</font>
+ &nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">hours</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
+ &nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">":"</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;
+ &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">mins</font> <font color="#434f54">&lt;</font> <font color="#000000">10</font><font color="#000000">)</font>
+ &nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"0"</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">mins</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
+ &nbsp;<font color="#5e6d03">else</font>
+ &nbsp;<font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">mins</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
 
-if (hours == 6 && mins == 0)
-{ 
-  digitalWrite (9, HIGH);  
-    } 
-if (hours == 10 && mins == 0)
-{
-  digitalWrite (9, LOW);
-}
-  
-}
-[/code]
+<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">hours</font> <font color="#434f54">==</font> <font color="#000000">6</font> <font color="#434f54">&&</font> <font color="#000000">mins</font> <font color="#434f54">==</font> <font color="#000000">0</font><font color="#000000">)</font>
+<font color="#000000">{</font> 
+ &nbsp;<font color="#d35400">digitalWrite</font> <font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;
+ &nbsp;&nbsp;&nbsp;<font color="#000000">}</font> 
+<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">hours</font> <font color="#434f54">==</font> <font color="#000000">10</font> <font color="#434f54">&&</font> <font color="#000000">mins</font> <font color="#434f54">==</font> <font color="#000000">0</font><font color="#000000">)</font>
+<font color="#000000">{</font>
+ &nbsp;<font color="#d35400">digitalWrite</font> <font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
+<font color="#000000">}</font>
+ &nbsp;
+<font color="#000000">}</font>
+
+</pre>
 
 The last part of the code is for you to select the alarm time.
 
-Long Video:
+To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 
 ![simwudlong](https://cloud.githubusercontent.com/assets/22894897/20111111/4b3acc94-a5a4-11e6-9b0f-a2b7fd9c4a49.gif)
-
-To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 
 This is how it looks finished:
 
