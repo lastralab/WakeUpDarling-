@@ -120,6 +120,4 @@ This is how it looks finished:
 
 I used an old box to put it inside so water can't damage it.
 
-![whatsapp image 2016-11-09 at 11 29 14](https://cloud.githubusercontent.com/assets/22894897/20149743/df877098-a66f-11e6-9479-ac3d2bc6ff86.jpeg)
-
 ![whatsapp image 2016-11-09 at 11 29 15](https://cloud.githubusercontent.com/assets/22894897/20149742/df817e18-a66f-11e6-8022-f7d398c50352.jpeg)
