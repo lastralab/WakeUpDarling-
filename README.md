@@ -1,5 +1,5 @@
 # WakeUpDarling-
-Arduino based Coffee Machine Alarm
+Arduino + Coffee Machine Alarm
 
 Video:
 
