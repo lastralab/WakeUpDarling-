@@ -114,10 +114,8 @@ To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarl
 
 This is how it looks finished:
 
-![whatsapp image 2016-11-09 at 11 29 13](https://cloud.githubusercontent.com/assets/22894897/20149744/df8b5802-a66f-11e6-814a-c6b53932a87a.jpeg)
-
 ![ard](https://cloud.githubusercontent.com/assets/22894897/22409013/4d5550a8-e640-11e6-88ca-2ea34c908431.jpeg)
 
 I used an old box to put it inside so water can't damage it.
 
-![whatsapp image 2016-11-09 at 11 29 15](https://cloud.githubusercontent.com/assets/22894897/20149742/df817e18-a66f-11e6-8022-f7d398c50352.jpeg)
+
