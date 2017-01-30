@@ -118,7 +118,7 @@ This is how it looks finished:
 
 ![ardu](https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg)
 
-I used an old box to put it inside so water/dust can't damage it quickly.
+I used an old box to put it inside so water/dust wouldn't damage it.
 
 ![arduino](https://cloud.githubusercontent.com/assets/22894897/22409432/f21dc042-e646-11e6-93e8-440aac4209b4.jpeg)
 
