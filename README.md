@@ -7,7 +7,7 @@ First prototype:
 
 The light bulb represents the Coffee Machine
 
-Parts I used:
+PARTS I USED:
 
 Arduino Uno
 
