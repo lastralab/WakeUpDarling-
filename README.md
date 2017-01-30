@@ -1,11 +1,11 @@
 # WakeUpDarling-
 Arduino + Coffee Machine Alarm
 
+First prototype:
+
 ![simwud-2](https://cloud.githubusercontent.com/assets/22894897/20111199/a6c945e0-a5a4-11e6-84fa-bf9d606cb45e.gif)
 
-Lab View:
-
-<img width="792" alt="screen shot 2016-11-06 at 2 09 11 pm" src="https://cloud.githubusercontent.com/assets/22894897/20041727/a91ebbfc-a42a-11e6-9671-c52053b632ea.png">
+The light bulb represents the Coffee Machine
 
 Parts I used:
 
