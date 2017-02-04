@@ -45,6 +45,8 @@ The Real Time module was wired as following:
 
 ![fritzing-rtc](https://cloud.githubusercontent.com/assets/22894897/22409110/1bd07cc2-e642-11e6-8a67-61d256fa60cf.png)
 
+Those Pins may vary on other Arduinos... just make sure you are wiring them to the SCL and SDA pins.
+
 Code:
 
 <pre>
