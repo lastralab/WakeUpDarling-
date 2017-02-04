@@ -51,7 +51,7 @@ Code:
 
 <pre>
 <font color="#434f54">// WakeUpDarling!</font>
-<font color="#434f54">// Dedicated to my wife.</font>
+<font color="#434f54">// Dedicated to my wife and inspired by her.</font>
 <font color="#434f54">// Made by Tania Molina</font>
 <font color="#434f54">// License: MIT License</font>
 <font color="#434f54">// Downloaded from: </font><u><font color="#434f54">https://circuits.io/circuits/3126865-wakeupdarling</font></u><font color="#434f54"></font>
