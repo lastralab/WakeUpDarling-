@@ -11,6 +11,8 @@ PARTS I USED:
 
 Arduino Uno
 
+Real Time Module for Arduino
+
 LCD 16x2
 
 Wires
@@ -28,8 +30,6 @@ Transistor NPN (2222A)
 Relay SPDT 5VDC 
 
 Soldering iron
-
-Real Time Module for arduino
 
 Grounding Converters (2) like the one in the picture
 
