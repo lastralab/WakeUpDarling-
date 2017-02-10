@@ -112,8 +112,6 @@ Code:
 
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 
-![simwudlong](https://cloud.githubusercontent.com/assets/22894897/20111111/4b3acc94-a5a4-11e6-9b0f-a2b7fd9c4a49.gif)
-
 This is how it looks finished:
 
 ![ard](https://cloud.githubusercontent.com/assets/22894897/22409013/4d5550a8-e640-11e6-88ca-2ea34c908431.jpeg)
