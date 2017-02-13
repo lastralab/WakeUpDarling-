@@ -1,4 +1,4 @@
-# WakeUpDarling-
+# WakeUpDarling!
 Arduino + Coffee Machine Alarm
 
 First prototype:
