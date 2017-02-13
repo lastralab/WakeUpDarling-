@@ -3,9 +3,9 @@ Arduino + Coffee Machine Alarm
 
 Prototype:
 
-![simwud-2](https://cloud.githubusercontent.com/assets/22894897/20111199/a6c945e0-a5a4-11e6-84fa-bf9d606cb45e.gif)
+![wakeup](https://cloud.githubusercontent.com/assets/22894897/22896151/3a740a36-f1dc-11e6-92b3-3020ded01b88.gif)
 
-The light bulb represents the Coffee Machine
+The light bulb represents the Coffee Machine and the RTC module will send the time to the LCD display, then you can set the alarm.
 
 PARTS I USED:
 
