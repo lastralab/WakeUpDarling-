@@ -1,7 +1,7 @@
 # WakeUpDarling!
 Arduino + Coffee Machine Alarm
 
-First prototype:
+Prototype:
 
 ![simwud-2](https://cloud.githubusercontent.com/assets/22894897/20111199/a6c945e0-a5a4-11e6-84fa-bf9d606cb45e.gif)
 
@@ -35,15 +35,18 @@ Grounding Converters (2) like the one in the picture
 
 ![31caoriq80l _sy300_](https://cloud.githubusercontent.com/assets/22894897/20027208/738834a8-a2d3-11e6-9fa4-d4ee56378a8d.jpg)
 
-Once I had everything, I wired the coffee machine as the light bulb in the simulator.  
+Once I had everything, I wired the coffee machine as the light bulb in the simulator. 
+
+
+<img width="717" alt="screenshot 2017-02-13 10 51 39" src="https://cloud.githubusercontent.com/assets/22894897/22895685/a6b768c0-f1da-11e6-825c-6f4e9b76cdf5.png">
 
 Schematics View:
 
-<img width="863" alt="screen shot 2016-11-08 at 8 56 51 am" src="https://cloud.githubusercontent.com/assets/22894897/20106175/78fda4d4-a591-11e6-80ca-00de4065ab49.png">
+<img width="736" alt="screenshot 2017-02-13 10 54 58" src="https://cloud.githubusercontent.com/assets/22894897/22895763/e223692c-f1da-11e6-817f-6fdb61156485.png">
 
 The Real Time module was wired as following:
 
-![fritzing-rtc](https://cloud.githubusercontent.com/assets/22894897/22409110/1bd07cc2-e642-11e6-8a67-61d256fa60cf.png)
+<img width="735" alt="screenshot 2017-02-13 10 59 11" src="https://cloud.githubusercontent.com/assets/22894897/22895935/79c6bd10-f1db-11e6-834a-51176f01b9c1.png">
 
 Those Pins may vary on other Arduinos... just make sure you are wiring them to the SCL and SDA pins.
 
