@@ -75,7 +75,7 @@ Code:
  &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
  &nbsp;<font color="#000000">rtc</font><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
 
- &nbsp;<font color="#000000">rtc</font><font color="#434f54">.</font><font color="#d35400">setTime</font><font color="#000000">(</font><font color="#000000">6</font><font color="#434f54">,</font> <font color="#000000">59</font><font color="#434f54">,</font> <font color="#000000">50</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">// Set the real time for the module </font>
+ &nbsp;<font color="#000000">rtc</font><font color="#434f54">.</font><font color="#d35400">setTime</font><font color="#000000">(</font><font color="#000000">6</font><font color="#434f54">,</font> <font color="#000000">59</font><font color="#434f54">,</font> <font color="#000000">50</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">// Set the real time for the module, uncomment to set time, comment once you set it and be sure the battery is new. </font>
  &nbsp;<font color="#434f54">//&lt;hour, minutes, seconds&gt; (24hr format)</font>
  &nbsp;<font color="#434f54">//rtc.setDate(1, 8, 2017); &nbsp;&nbsp;// Uncomment to set the date to January 1st, 2014 (optional)</font>
 <font color="#000000">}</font>
