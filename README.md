@@ -124,3 +124,5 @@ This is how it looks finished:
 I used an old box to put it inside so water/dust wouldn't damage it.
 
 ![arduino](https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg)
+
+Good coffee helps this project to work better ;)
