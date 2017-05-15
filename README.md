@@ -1,15 +1,9 @@
-<style>
-img[src$="centerme"] {
-  display:block;
-  margin: 0 auto;
-}
-</style>
 # WakeUpDarling!
 Arduino + Coffee Machine Alarm
 
 Prototype:
 
-![wakeup](https://cloud.githubusercontent.com/assets/22894897/22896151/3a740a36-f1dc-11e6-92b3-3020ded01b88.gif?style=centerme)
+![wakeup](https://cloud.githubusercontent.com/assets/22894897/22896151/3a740a36-f1dc-11e6-92b3-3020ded01b88.gif)
 
 The light bulb represents the Coffee Machine and the RTC module will send the time to the LCD display, then you can set the alarm.
 
