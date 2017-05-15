@@ -3,7 +3,7 @@ Arduino + Coffee Machine Alarm
 
 Prototype:
 
-![wakeup](https://cloud.githubusercontent.com/assets/22894897/22896151/3a740a36-f1dc-11e6-92b3-3020ded01b88.gif)
+->![wakeup](https://cloud.githubusercontent.com/assets/22894897/22896151/3a740a36-f1dc-11e6-92b3-3020ded01b88.gif)<-
 
 The light bulb represents the Coffee Machine and the RTC module will send the time to the LCD display, then you can set the alarm.
 
@@ -33,12 +33,12 @@ Soldering iron
 
 Grounding Converters (2) like the one in the picture
 
-![31caoriq80l _sy300_](https://cloud.githubusercontent.com/assets/22894897/20027208/738834a8-a2d3-11e6-9fa4-d4ee56378a8d.jpg)
+->![31caoriq80l _sy300_](https://cloud.githubusercontent.com/assets/22894897/20027208/738834a8-a2d3-11e6-9fa4-d4ee56378a8d.jpg)<-
 
 Once I had everything, I wired the coffee machine as the light bulb in the simulator. 
 
 
-<img width="717" alt="screenshot 2017-02-13 10 51 39" src="https://cloud.githubusercontent.com/assets/22894897/22895685/a6b768c0-f1da-11e6-825c-6f4e9b76cdf5.png">
+-><img width="717" alt="screenshot 2017-02-13 10 51 39" src="https://cloud.githubusercontent.com/assets/22894897/22895685/a6b768c0-f1da-11e6-825c-6f4e9b76cdf5.png"><-
 
 Schematics View:
 
