@@ -116,13 +116,10 @@ Code:
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 
 This is how it looks finished:
-
-![ard](https://cloud.githubusercontent.com/assets/22894897/22409013/4d5550a8-e640-11e6-88ca-2ea34c908431.jpeg)
-
-![ardu](https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg)
+<img src="https://raw.githubusercontent.com/TaniaMol/website/master/images/TAN_8234.JPG?token=AV1ZMa7n65HHpT8S1nl2zq40FKcaS27_ks5ZLIgwwA%3D%3D"width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg" width="50%" height="50%">
 
 I used an old box to put it inside so water/dust wouldn't damage it.
 
-![arduino](https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg)
+<img src="https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg" width="50%" height="50%">
 
 Good coffee helps this project to work better ;)
