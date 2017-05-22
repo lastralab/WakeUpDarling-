@@ -116,10 +116,10 @@ Code:
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 
 This is how it looks finished:
-<img src="https://raw.githubusercontent.com/TaniaMol/website/master/images/TAN_8234.JPG" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg" width="50%" height="50%">
+<p style="text-align: center;"><img src="https://cloud.githubusercontent.com/TaniaMol/website/master/images/TAN_8234.JPG" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg" width="50%" height="50%">
 
 I used an old box to put it inside so water/dust wouldn't damage it.
 
 <img src="https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg" width="50%" height="50%">
 
-Good coffee helps this project to work better ;)
+Good coffee helps this project to work better ;) </p>
