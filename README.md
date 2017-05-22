@@ -116,7 +116,7 @@ Code:
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 
 This is how it looks finished:
-<img src="https://raw.githubusercontent.com/TaniaMol/website/master/images/TAN_8234.JPG?token=AV1ZMa7n65HHpT8S1nl2zq40FKcaS27_ks5ZLIgwwA%3D%3D"width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/TaniaMol/website/master/images/TAN_8234.JPG" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg" width="50%" height="50%">
 
 I used an old box to put it inside so water/dust wouldn't damage it.
 
