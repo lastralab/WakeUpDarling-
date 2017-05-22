@@ -120,6 +120,6 @@ This is how it looks finished:
 
 I used an old box to put it inside so water/dust wouldn't damage it.
 
-<img src="https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg" width="50%" height="50%">
+<img src="https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/26328068/fcf839e6-3f17-11e7-8404-03b5bd97d8cb.JPG" width="50%" height="50%">
 
 Good coffee helps this project to work better ;) </p>
