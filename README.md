@@ -76,7 +76,7 @@ void setup()
 
   //rtc.setTime(6, 59, 50);     // Uncomment this line to set the real time for the module, then comment it again after uploading.
   //<hour, minutes, seconds> (24hr format)
-  //rtc.setDate(1, 1, 2017);   // Uncomment to set the date to January 1st, 2017 (optional)
+  //rtc.setDate(1, 1, 2017);   // Uncomment to set the date to January 1st, 2017 (optional, it won't be showed in the display unless you want it to)
 }
 
 void loop()
