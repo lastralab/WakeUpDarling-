@@ -103,9 +103,9 @@ void loop()
   {
     digitalWrite (9, HIGH); //turns on coffee machine
   }
-  if (t.hour == 9 && t.min == 0) //time to leave
+  if (t.hour == 9 && t.min == 0) //you left before this time and forgot to turn it off... a fire can get started!...
   {
-    digitalWrite (9, LOW); //turns off coffee machine
+    digitalWrite (9, LOW); //turns off coffee machine and saves the world.
   }
   
 }
