@@ -105,7 +105,7 @@ void loop()
   }
   if (t.hour == 9 && t.min == 0) //time to leave
   {
-    digitalWrite (9, LOW); //turn off coffee machine
+    digitalWrite (9, LOW); //turns off coffee machine
   }
   
 }
