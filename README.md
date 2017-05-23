@@ -52,66 +52,64 @@ Those Pins may vary on other Arduinos... just make sure you are wiring them to t
 
 Code:
 
-<pre>
-<font color="#434f54">// WakeUpDarling!</font>
-<font color="#434f54">// Dedicated to my wife and inspired by her.</font>
-<font color="#434f54">// Made by Tania Molina</font>
-<font color="#434f54">// License: MIT License</font>
-<font color="#434f54">// Downloaded from: </font><u><font color="#434f54">https://circuits.io/circuits/3126865-wakeupdarling</font></u><font color="#434f54"></font>
+```C++
+// WakeUpDarling!
+// Dedicated to my wife.
+// Created by Tania Molina
+// Downloaded from: https://circuits.io/circuits/3126865-wakeupdarling
 
-<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">DS3231</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font> <font color="#434f54">//download if you don't have it yet.</font>
-<font color="#5e6d03">#include</font> <font color="#434f54">&lt;</font><b><font color="#d35400">LiquidCrystal</font></b><font color="#434f54">.</font><font color="#000000">h</font><font color="#434f54">&gt;</font>
+#include <DS3231.h> //download if you don't have it yet.
+#include <LiquidCrystal.h>
 
-<b><font color="#d35400">DS3231</font></b> &nbsp;<font color="#000000">rtc</font><font color="#000000">(</font><font color="#00979c">SDA</font><font color="#434f54">,</font> <font color="#00979c">SCL</font><font color="#000000">)</font><font color="#000000">;</font>
-<b><font color="#d35400">Time</font></b> <font color="#000000">t</font><font color="#000000">;</font>
-<b><font color="#d35400">LiquidCrystal</font></b> <font color="#000000">lcd</font><font color="#000000">(</font><font color="#000000">7</font><font color="#434f54">,</font> <font color="#000000">6</font><font color="#434f54">,</font> <font color="#000000">5</font><font color="#434f54">,</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">3</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
+DS3231  rtc(SDA, SCL);
+Time t;
+LiquidCrystal lcd(7, 6, 5, 4, 3, 2);
 
 
-<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font>
-<font color="#000000">{</font>
- &nbsp;<font color="#434f54">// Setup Serial connection</font>
- &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">115200</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">rtc</font><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+void setup()
+{
+  // Setup Serial connection
+  Serial.begin(115200);
+  pinMode(9, OUTPUT);
+  digitalWrite(9, LOW);
+  rtc.begin();
 
- &nbsp;<font color="#000000">rtc</font><font color="#434f54">.</font><font color="#d35400">setTime</font><font color="#000000">(</font><font color="#000000">6</font><font color="#434f54">,</font> <font color="#000000">59</font><font color="#434f54">,</font> <font color="#000000">50</font><font color="#000000">)</font><font color="#000000">;</font> &nbsp;&nbsp;&nbsp;&nbsp;<font color="#434f54">// Set the real time for the module, uncomment to set time, comment once you set it and be sure the battery is new. </font>
- &nbsp;<font color="#434f54">//&lt;hour, minutes, seconds&gt; (24hr format)</font>
- &nbsp;<font color="#434f54">//rtc.setDate(1, 8, 2017); &nbsp;&nbsp;// Uncomment to set the date to January 1st, 2014 (optional)</font>
-<font color="#000000">}</font>
+  rtc.setTime(6, 59, 50);     // Set the real time for the module 
+  //<hour, minutes, seconds> (24hr format)
+  //rtc.setDate(1, 8, 2017);   // Uncomment to set the date to January 1st, 2014 (optional)
+}
 
-<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font>
-<font color="#000000">{</font>
- &nbsp;<font color="#000000">t</font> <font color="#434f54">=</font> <font color="#000000">rtc</font><font color="#434f54">.</font><font color="#d35400">getTime</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
+void loop()
+{
+  t = rtc.getTime();
  
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">16</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">clear</font><font color="#000000">(</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#434f54">// Send time</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">1</font><font color="#434f54">,</font><font color="#000000">0</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"Wake up Darling"</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">setCursor</font><font color="#000000">(</font><font color="#000000">0</font><font color="#434f54">,</font><font color="#000000">1</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">t</font><font color="#434f54">.</font><font color="#d35400">hour</font><font color="#434f54">,</font> <font color="#00979c">DEC</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"hrs "</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">t</font><font color="#434f54">.</font><font color="#d35400">min</font><font color="#434f54">,</font> <font color="#00979c">DEC</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"min "</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#000000">t</font><font color="#434f54">.</font><font color="#d35400">sec</font><font color="#434f54">,</font> <font color="#00979c">DEC</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#000000">lcd</font><font color="#434f54">.</font><font color="#d35400">print</font><font color="#000000">(</font><font color="#005c5f">"sec"</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">1000</font><font color="#000000">)</font><font color="#000000">;</font>
- &nbsp;
- &nbsp;<font color="#434f54">//set alarm:</font>
+  lcd.begin(16, 2);
+  lcd.clear();
+  // Send time
+  lcd.setCursor(1,0);
+  lcd.print("Wake up Darling");
+  lcd.setCursor(0,1);
+  lcd.print(t.hour, DEC);
+  lcd.print("hrs ");
+  lcd.print(t.min, DEC);
+  lcd.print("min ");
+  lcd.print(t.sec, DEC);
+  lcd.print("sec");
+  delay(1000);
+  
+  //set alarm:
  
- &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">t</font><font color="#434f54">.</font><font color="#d35400">hour</font> <font color="#434f54">==</font> <font color="#000000">7</font> <font color="#434f54">&&</font> <font color="#000000">t</font><font color="#434f54">.</font><font color="#d35400">min</font> <font color="#434f54">==</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#434f54">//time to wake up</font>
- &nbsp;<font color="#000000">{</font>
- &nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font> <font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">HIGH</font><font color="#000000">)</font><font color="#000000">;</font> <font color="#434f54">//turns on coffee machine</font>
- &nbsp;<font color="#000000">}</font>
- &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">t</font><font color="#434f54">.</font><font color="#d35400">hour</font> <font color="#434f54">==</font> <font color="#000000">9</font> <font color="#434f54">&&</font> <font color="#000000">t</font><font color="#434f54">.</font><font color="#d35400">min</font> <font color="#434f54">==</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#434f54">//time to leave</font>
- &nbsp;<font color="#000000">{</font>
- &nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font> <font color="#000000">(</font><font color="#000000">9</font><font color="#434f54">,</font> <font color="#00979c">LOW</font><font color="#000000">)</font><font color="#000000">;</font> <font color="#434f54">//turn off coffee machine</font>
- &nbsp;<font color="#000000">}</font>
- &nbsp;
-<font color="#000000">}</font>
-
-</pre>
+  if (t.hour == 7 && t.min == 0) //time to wake up
+  {
+    digitalWrite (9, HIGH); //turns on coffee machine
+  }
+  if (t.hour == 9 && t.min == 0) //time to leave
+  {
+    digitalWrite (9, LOW); //turn off coffee machine
+  }
+  
+}
+```
 
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 
