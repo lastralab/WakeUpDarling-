@@ -2,7 +2,7 @@
 Arduino + Coffee Machine Alarm
 
 Prototype:
-
+<br>
 ![wakeup](https://cloud.githubusercontent.com/assets/22894897/22896151/3a740a36-f1dc-11e6-92b3-3020ded01b88.gif)
 
 The light bulb represents the Coffee Machine and the RTC module will send the time to the LCD display, then you can set the alarm.
@@ -35,8 +35,7 @@ Grounding Converters (2) like the one in the picture
 
 ![31caoriq80l _sy300_](https://cloud.githubusercontent.com/assets/22894897/20027208/738834a8-a2d3-11e6-9fa4-d4ee56378a8d.jpg)
 
-Once I had everything, I wired the coffee machine as the light bulb in the simulator. 
-
+Once I had everything, I wired the coffee machine as the light bulb in the simulator. <br>
 
 <img width="717" alt="screenshot 2017-02-13 10 51 39" src="https://cloud.githubusercontent.com/assets/22894897/22895685/a6b768c0-f1da-11e6-825c-6f4e9b76cdf5.png">
 
@@ -112,12 +111,12 @@ void loop()
 ```
 
 To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
-
-This is how it looks finished:
+<br>
+This is how it looks finished:<br>
 <p style="text-align: center;"><img src="https://cloud.githubusercontent.com/assets/22894897/26328068/fcf839e6-3f17-11e7-8404-03b5bd97d8cb.JPG" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg" width="50%" height="50%">
-
+<br>
 I used an old box to put it inside so water/dust wouldn't damage it.
-
+<br>
 <img src="https://cloud.githubusercontent.com/assets/22894897/22409013/4d5550a8-e640-11e6-88ca-2ea34c908431.jpeg" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg" width="50%" height="50%">
-
+<br>
 Good coffee helps this project to work better ;) </p>
