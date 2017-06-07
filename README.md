@@ -109,8 +109,6 @@ void loop()
   
 }
 ```
-
-To run the simulator, click here https://circuits.io/circuits/3145505-wakeupdarling
 <br>
 This is how it looks finished:<br>
 <p style="text-align: center;"><img src="https://cloud.githubusercontent.com/assets/22894897/26328068/fcf839e6-3f17-11e7-8404-03b5bd97d8cb.JPG" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409431/ef554e34-e646-11e6-88f4-6e593f6a52df.jpeg" width="50%" height="50%">
