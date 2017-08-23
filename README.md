@@ -118,3 +118,5 @@ I used an old box to put it inside so water/dust wouldn't damage it.
 <img src="https://cloud.githubusercontent.com/assets/22894897/22409013/4d5550a8-e640-11e6-88ca-2ea34c908431.jpeg" width="50%" height="50%"><img src="https://cloud.githubusercontent.com/assets/22894897/22409587/25b8d340-e649-11e6-81ed-0803b6c6b85b.jpeg" width="50%" height="50%">
 <br>
 Good coffee helps this project to work better ;) </p>
+<br><br>
+<p align="center">Powered by <b>L'Astra Lab<b><br><a href="https://taniamol.github.io/website/" target="_blank"><button><img src="http://i.imgur.com/IvXPn8z.png" alt="l'astra lab icon" width="50px" background="transparent" opacity="0.5" padding="0;"/></button></a></p><br>
