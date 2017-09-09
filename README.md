@@ -54,7 +54,7 @@ Code:
 ```C++
 // WakeUpDarling!
 // Dedicated to my wife.
-// Created by Tania Molina
+// Author: Niam Moltta
 // Downloaded from: https://circuits.io/circuits/3126865-wakeupdarling
 
 #include <DS3231.h> //download if you don't have it yet.
