@@ -1,7 +1,7 @@
 // WakeUpDarling!
-// Dedicated to my wife.
-// Author: Niam Moltta
+// *Dedicated to my wife.
 // License: MIT License
+// Copyright (c) 2017 Niam Moltta 
 // Downloaded from: https://circuits.io/circuits/3126865-wakeupdarling
 
 #include <DS3231.h> //download if you don't have it yet.
